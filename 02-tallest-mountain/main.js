@@ -9,3 +9,15 @@
 */
 
 // YOUR CODE HERE
+let mountainHeights = [50, 100, 150, 500, 300]
+let tallestmountain = 0;
+let index = 0;
+while (index <mountainHeights.length){
+   //console.log(mountainHeights[index]);
+   if (tallestmountain < mountainHeights[index]) {
+      tallestmountain = mountainHeights[index]
+
+   }
+   index = index + 1;
+}
+console.log(tallestmountain);

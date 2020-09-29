@@ -1,6 +1,7 @@
 /*
   LETTER COUNT
 
+
   1. Create a variable, named "word," which contains any lengthy word.
   2. Create a second variable, named "letter," which contains any
       letter. 
@@ -20,3 +21,27 @@
 */
 
 // YOUR CODE HERE
+let word = ["Robinhood"]
+let letter = "o";
+let letterCount = 0;
+
+let index = 0
+while (index <word.length) {
+   //console.log(index,word[index]);
+   if (letter === word[index]) {
+      //console.log(index);
+      letterCount = letterCount + 1;
+   }
+   index = index + 1
+}
+if (letterCount > 0) {
+   console.log("The letter \"" + letter + "\" exists " + letterCount + "times in this word!");
+} else {
+   console.log("Nope,that letter doesn't exist in my word!");
+}
+
+
+
+   
+   
+
